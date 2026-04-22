@@ -82,6 +82,13 @@ export function validateCVC(value: string, cardInfo: CardTypeInfo): string {
 export function validateStreetAddress(value: string): string {
   if (!value.trim()) return "Street address is required";
   if (value.trim().length < 5) return "Please enter a valid street address";
+  if (value.trim().length > 30) return "Please enter a valid street address";
+  if (
+    !/^\d+\s(?:[A-Za-z0-9.-]+\s?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\.?\s*$/.test(
+      value,
+    )
+  )
+    return "Not a valid street address";
   return "";
 }
 

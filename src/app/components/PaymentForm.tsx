@@ -18,8 +18,8 @@ export function PaymentForm() {
   } = usePaymentForm();
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-8">
-      <div className="text-center mb-8">
+    <div className="w-full max-w-2xl mx-auto bg-linear-to-br from-white/10 to-black/5 border-2 border-white/40 rounded-2xl backdrop-blur-2xl p-8">
+      <div className="text-center m-8">
         <h1 className="text-4xl mb-2">Secure Checkout</h1>
         <p className="text-base text-gray-600">
           Complete your payment securely
@@ -66,7 +66,7 @@ export function PaymentForm() {
         <div className="pt-6">
           <Button
             type="submit"
-            className="w-full border-2 border-black/40 bg-gradient-to-r from-white/20 to-black/200 hover:from-gray-100 hover:to-gray-400 text-black/70 h-12 backdrop-blur-3xl rounded-lg text-base shadow-lg hover:shadow-xl transition-all"
+            className="w-full border-2 text-white border-white/40 bg-gradient-to-r from-black/20 to-black/40 hover:from-gray-100 hover:to-gray-400  h-12 backdrop-blur-3xl rounded-lg text-base shadow-lg hover:shadow-xl transition-all"
           >
             <Lock className="w-4 h-4 mr-2" />
             Pay Now
