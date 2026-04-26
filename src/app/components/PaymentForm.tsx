@@ -19,13 +19,6 @@ export function PaymentForm() {
 
   return (
     <div className="w-full max-w-2xl mx-auto bg-linear-to-br from-white/10 to-black/5 border-2 border-white/40 rounded-2xl backdrop-blur-2xl p-8">
-      <div className="text-center m-8">
-        <h1 className="text-4xl mb-2">Secure Checkout</h1>
-        <p className="text-base text-gray-600">
-          Complete your payment securely
-        </p>
-      </div>
-
       <CardPreview
         cardType={cardType}
         cardNumber={formState.cardNumber.value}
